@@ -528,17 +528,6 @@ body {
     margin-right: 0px;
 }
 
-.img-task {
-    display: block;
-    max-width: 100%;
-    max-height: auto;
-}
-
-.img-work {
-    display: block;
-    max-width: 100%;
-    max-height: auto;
-}
 
 .task-name-thumb {
     display: flex;
@@ -653,6 +642,8 @@ body {
 .team-social-item:last-child {
     margin-right: 0px;
 }
+
+/* partners */
 
 .headlines-partner {
     margin-bottom: 50px;

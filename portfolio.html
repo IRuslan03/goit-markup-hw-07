@@ -7,41 +7,42 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body class="portfolio-body">
+<body>   
     <header class="header">
-        <div class="container header-container">
-     <!--навигація сайту-->
-     <nav class="nav-page">
-         <a href="./index.html" class="logo">
-         Web<span class="logo-color-black">Studio</span> 
-         </a>  
-         <ul class="nav-list">
-             <li class="nav-item"><a href="./index.html" class="nav-link">Студія</a></li>
-             <li class="nav-item"><a href="./portfolio.html" class="nav-link nav-link current">Портфоліо</a></li>
-             <li class="nav-item"><a href="./contacts.html" class="nav-link">Контакти</a></li>
-         </ul>
-     </nav>
-         <!--контакти--> 
-        <ul class="contacts">
-             <li class="contacts-item"><a href="mailto:info@devstudio.com" class="contacts-link">
-                <svg width="16" height="12" class="contacts-icon">
-                    <use href="./images/sprite.svg#icon-envelope">
-                    </use>
-                </svg> 
-                info@devstudio.com</a></li>
-             <li class="contacts--item"><a href="tel:+380961111111" class="contacts-link">
-                 <svg width="10" height="16" class="contacts-icon">
-                    <use href="./images/sprite.svg#icon-phone">
-                    </use>
-                </svg> 
-                +38 096 111 11 11</a></li>
-        </ul>
+    <div class="container header__container">
+        <nav class="header__nav">
+            <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
+            <ul class="header__list-nav">
+                <li class="header__items">
+                    <a href="./index.html" class="header__link-nav">Студія</a>
+                </li>
+                <li class="header__items">
+                    <a href="./portfolio.html" class="header__link-nav header__link-nav--active">Портфоліо</a>
+                </li>
+                <li class="header__items">
+                    <a href="" class="header__link-nav">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__container-links">     
+            <a href="mailto:info@devstudio.com" class="header__link">
+                <svg width="16" height="12" class="header__icon">
+                    <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                 info@devstudio.com</a>
+            
+            <a href="tel:+380961111111" class="header__link">
+                <svg width="10" height="16" class="header__icon">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a>
         </div>
-     </header>
+    </div>
+   </header> 
      <!--Main-->
      <main>
          <!--Портфоліо-->
@@ -215,7 +216,7 @@
      </section>
      </main>
     <footer class="footer">
-      <div class="container footer-list">            
+      <div class="footer-container">            
             <div class="item-address">
                 <a href="./index.html" class="logo"> <span style="color: #2196F3;">Web</span>Studio</a>
                     <address>
@@ -264,7 +265,7 @@
          <form class="subscription" name="subscription" autocomplete="on">
                  <input class="subscription-input" type="email" name="subsrtiption-email" id="subsrtiption-email" placeholder="E-mail" required="">
                  <label class="hide" for="subsrtiption-email">Пошта</label>
-                 <button class="form-submit-btn" type="submit">
+             <button class="form-submit-btn" type="submit">
                  Підписатися
                  <svg width="24" height="24" class="form-submit-icon">
                      <use href="./images/sprite.svg#icon-send"></use>
@@ -274,6 +275,6 @@
         </div>
         </div>
      </footer>
+     <script src="./js/modal.js"></script>
 </body>
 </html>
-  

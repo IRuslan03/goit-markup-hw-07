@@ -7,61 +7,56 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body>
+<body>   
     <header class="header">
-        <div class="container header-container">
-     <!--навигація сайту-->
-     <nav class="nav-page">
-         <a href="./index.html" class="logo">
-         Web<span class="logo-color-black">Studio</span> 
-         </a>  
-         <ul class="nav-list">
-             <li class="nav-item"><a href="./index.html" class="nav-link nav-link current">Студія</a></li>
-             <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-             <li class="nav-item"><a href="./contacts.html" class="nav-link">Контакти</a></li>
-         </ul>
-     </nav>
-         <!--контакти--> 
-        <ul class="contacts">
-             <li class="contacts-item">
-                 <a class="contacts-link" href="mailto:info@devstudio.com">
-                <svg width="16" height="12" class="contacts-icon">
-                    <use href="./images/sprite.svg#icon-envelope">
-                    </use>
-                 </svg> 
-                info@devstudio.com
-                 </a>
-             </li>
-             <li class="contacts-item">
-                 <a class="contacts-link" href="tel:+380961111111">
-                 <svg width="10" height="16" class="contacts-icon">
-                    <use href="./images/sprite.svg#icon-phone">
-                    </use>
-                </svg> 
-                +38 096 111 11 11
-             </a>
-             </li>
-        </ul>
+    <div class="container header__container">
+        <nav class="header__nav">
+            <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
+            <ul class="header__list-nav">
+                <li class="header__items">
+                    <a href="./index.html" class="header__link-nav page-header__link-nav--active">Студія</a>
+                </li>
+                <li class="header__items">
+                    <a href="./portfolio.html" class="header__link-nav">Портфоліо</a>
+                </li>
+                <li class="header__items">
+                    <a href="" class="header__link-nav">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__container-links">     
+            <a href="mailto:info@devstudio.com" class="header__link">
+                <svg width="16" height="12" class="header__icon">
+                    <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                 info@devstudio.com</a>
+            
+            <a href="tel:+380961111111" class="header__link">
+                <svg width="10" height="16" class="header__icon">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a>
         </div>
-     </header>
+    </div>
+   </header> 
          <main>
          <!--Головний баннер-->
          <section class="hero">
              <h1 class="hero-title">
                  ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
              </h1>
-             <button data-modal-open type="button" class="hero-btn">Замовити послугу</button>
-             <div class="backdrop is-hidden" data-modal>
-                 <div class="modal">
-                     <button data-modal-close type="button" class="modal-btn-closed"><svg width="11" height="11">
-                    <use href="./images/closed.svg#icon-closed">
-                    </use>
-                    </svg>
-                     </button>
+                     <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
+            <div class="backdrop backdrop__is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="button-modal-close data-modal-close" data-modal-close>
+                        <svg width="11" height="11" class="button-modal-close__icon">
+                            <use href="./images/sprite.svg#icon-closed"></use>
+                        </svg>
+                    </button >
                      <form class="form" name="data-transfer" autocomplete="on">
                      <strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
                      <div role="group" class="form-group-field">
@@ -106,7 +101,7 @@
              </div>
          </section>
          <!--Переваги нашої фірми-->
-         <section class="section advantege-section">
+          <section class="section advantege-section">
              <h2 class="hide">Переваги нашої фірми</h2>
              <div class="container">
              <ul class="advantage-list">
@@ -170,12 +165,12 @@
          </div>
          </section>
          <!--Чим ми займаємось-->
-            <section class="section">
-             <div class="container">
+            <section class="task-section">
+             <div class="task-container">
                   <h2 class="headlines">Чим ми займаємось</h2>
              <ul class="task-list">
                  <li class="task-item">
-                     <img class="img-task" src="./images/wwdone.jpg" 
+                     <img class="img" src="./images/wwdone.jpg" 
                      alt="ми працюємо"
                      width="370">
                       <div class="task-name-thumb">
@@ -183,14 +178,14 @@
                      </div>
                  </li>
                  <li class="task-item">
-                     <img class="img-task" src="./images/wwdtwo.jpg" alt="ми працюємо"
+                     <img class="img" src="./images/wwdtwo.jpg" alt="ми працюємо"
                      width="370">
                      <div class="task-name-thumb">
                          <p class="task-name">Мобільні додатки</p>
                      </div>
                  </li>
                  <li class="task-item">
-                     <img class="img-task" src="./images/wwdthree.jpg" alt="ми працюємо"
+                     <img class="img" src="./images/wwdthree.jpg" alt="ми працюємо"
                      width="370">
                      <div class="task-name-thumb">
                          <p class="task-name">Дизайнерські рішення</p>
@@ -202,7 +197,7 @@
          <!--Наша команда-->
                  <section class="section section-team">
                    <h2 class="headlines">Наша команда</h2>
-                   <div class="container">
+                   <div class="team-container">
                    <ul class="team-list">
                        <li class="team-item">
                            <img class="img" src="./images/igor.jpg" 
@@ -404,8 +399,8 @@
                    </div>
                  </section>
                   <!-- Наші клієнти -->
-                     <section class="section">
-                     <div class="container">
+                     <section class="partners-section">
+                     <div class="partners-container">
                      <h2 class="headlines-partner">Постійні клієнти</h2>
                          <ul class="partners-list">
                              <li class="partners-item">
@@ -461,7 +456,7 @@
                  </section>
                  </main>
      <footer class="footer">
-      <div class="container footer-list">            
+      <div class="footer-container">            
             <div class="item-address">
                 <a href="./index.html" class="logo"> <span style="color: #2196F3;">Web</span>Studio</a>
                     <address>
